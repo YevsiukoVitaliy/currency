@@ -6,6 +6,7 @@ import MainLayout from 'layout/MainLayout';
 
 // render - dashboard
 const DashboardDefault = Loadable(lazy(() => import('pages/dashboard')));
+const Partition = Loadable(lazy(() => import('pages/Partition.js')));
 
 // ==============================|| MAIN ROUTING ||============================== //
 
@@ -23,6 +24,15 @@ const MainRoutes = {
         {
           path: 'default',
           element: <DashboardDefault />
+        }
+      ]
+    },
+    {
+      path: 'pre-partition',
+      children: [
+        {
+          path: '',
+          element: <Partition />
         }
       ]
     }
