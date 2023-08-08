@@ -1,14 +1,15 @@
 // material-ui
+// eslint-disable-next-line no-unused-vars
 import { useMediaQuery, Container, Link, Typography, Stack } from '@mui/material';
 
 // ==============================|| FOOTER - AUTHENTICATION ||============================== //
 
 const AuthFooter = () => {
-  const matchDownSM = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+  // const matchDownSM = useMediaQuery((theme) => theme.breakpoints.down('sm'));
 
   return (
     <Container maxWidth="xl">
-      <Stack
+      {/* <Stack
         direction={matchDownSM ? 'column' : 'row'}
         justifyContent={matchDownSM ? 'center' : 'space-between'}
         spacing={2}
@@ -53,7 +54,7 @@ const AuthFooter = () => {
             Support
           </Typography>
         </Stack>
-      </Stack>
+      </Stack> */}
     </Container>
   );
 };
